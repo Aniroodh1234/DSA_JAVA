@@ -7,9 +7,17 @@ public class range_prime{
         if(n==2){
             System.out.print("2 is a prime number");
         }
-        for (int i = 2; i<=Math.sqrt(n);i++){
-            if(n%i==0){
-                System.out.print("The prime numbers in the range of 1 to " + n + " are: ");
+
+        for(int i =2; i<n; i++){
+            boolean isprime =  true;
+            for(int j =2; j<= Math.sqrt(i); j++){
+                if(i%j==0){
+                    isprime = false;
+                    break;
+                }
+            }
+            if(isprime){
+                System.out.print(i + " ");  
             }
         }
     }

@@ -1,13 +1,15 @@
 import java.util.*;
-public class array_basics{
+
+public class array_basics {
 
     //array call by reference function 
-    public static void add(int arr[]){
-        for(int i =0; i<arr.length;i++){
-            arr[i] = arr[i]+1;
+    public static void add(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = arr[i] + 1;
         }
     }
-    public static void main(String[]args){
+
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         // creating array
@@ -19,13 +21,12 @@ public class array_basics{
         arr[2] = sc.nextInt();
 
         //printing array element
-        System.out.println("printing the zero element of array "+arr[0]);
-
+        System.out.println("printing the zero element of array " + arr[0]);
 
         System.out.print("value of array before the function call ");
         // printing array
-        for(int i =0; i<arr.length;i++){
-            System.out.print(arr[i]+" ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
 
         System.out.println();
@@ -35,8 +36,8 @@ public class array_basics{
 
         // printing array
         System.out.print("value of array after the function call ");
-        for(int i =0; i<arr.length;i++){
-            System.out.print(arr[i]+" ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
 }
